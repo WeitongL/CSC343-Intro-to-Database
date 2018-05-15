@@ -1,0 +1,268 @@
+csc343h-luoweito-> \echo -- Loading schema and data:
+-- Loading schema and data:
+csc343h-luoweito-> \i schema.ddl
+psql:schema.ddl:4: NOTICE:  drop cascades to 23 other objects
+DETAIL:  drop cascades to table carmodel
+drop cascades to table stations
+drop cascades to table cars
+drop cascades to table customer
+drop cascades to type reservationstatus
+drop cascades to table reservation
+drop cascades to table customerreservation
+drop cascades to table q1
+drop cascades to view cancellations
+drop cascades to view total_res
+drop cascades to table q2
+drop cascades to view non_canceled
+drop cascades to view carpool
+drop cascades to view top_two
+drop cascades to table q3
+drop cascades to view rental
+drop cascades to view countmodel
+drop cascades to view themost
+drop cascades to table q4
+drop cascades to view reservation_18months
+drop cascades to view youngdriver
+drop cascades to view changed
+drop cascades to view changedtwice
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TYPE
+CREATE TABLE
+CREATE TABLE
+csc343h-luoweito-> \i data.sql
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+csc343h-luoweito-> \echo -- Query 1:
+-- Query 1:
+csc343h-luoweito-> \i q1.sql
+SET
+psql:q1.sql:3: NOTICE:  table "q1" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q1.sql:15: NOTICE:  view "cancellations" does not exist, skipping
+DROP VIEW
+psql:q1.sql:16: NOTICE:  view "total_res" does not exist, skipping
+DROP VIEW
+psql:q1.sql:17: NOTICE:  view "top_two" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 2
+ customer_name  |      email       | age | ratio 
+----------------+------------------+-----+-------
+ Jonah Swartz   | jj.swtz@mail.com |  28 |     1
+ John Parkinson | jparki@mail.com  |  33 |     1
+(2 rows)
+
+csc343h-luoweito-> \echo -- Query 2:
+-- Query 2:
+csc343h-luoweito-> \i q2.sql
+SET
+psql:q2.sql:3: NOTICE:  table "q2" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q2.sql:15: NOTICE:  view "non_canceled" does not exist, skipping
+DROP VIEW
+psql:q2.sql:16: NOTICE:  view "carpool" does not exist, skipping
+DROP VIEW
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 2
+ customer_name  |     email      | age | num_of_shared_reservations 
+----------------+----------------+-----+----------------------------
+ Atena Najm     | a.n@mail.com   |  39 |                          1
+ Cynthia Nguyen | cyngu@mail.com |  27 |                          1
+(2 rows)
+
+csc343h-luoweito-> \echo -- Query 3:
+-- Query 3:
+csc343h-luoweito-> \i q3.sql
+SET
+psql:q3.sql:3: NOTICE:  table "q3" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q3.sql:13: NOTICE:  view "rental" does not exist, skipping
+DROP VIEW
+psql:q3.sql:14: NOTICE:  view "countmodel" does not exist, skipping
+DROP VIEW
+psql:q3.sql:15: NOTICE:  view "themost" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 1
+ car_name 
+----------
+ BMW X5
+(1 row)
+
+csc343h-luoweito-> \echo -- Query 4:
+-- Query 4:
+csc343h-luoweito-> \i q4.sql
+SET
+psql:q4.sql:3: NOTICE:  table "q4" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+psql:q4.sql:13: NOTICE:  view "reservation_18months" does not exist, skipping
+DROP VIEW
+psql:q4.sql:14: NOTICE:  view "youngdriver" does not exist, skipping
+DROP VIEW
+psql:q4.sql:15: NOTICE:  view "changed" does not exist, skipping
+DROP VIEW
+psql:q4.sql:16: NOTICE:  view "changedtwice" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 0
+ customer_ids 
+--------------
+(0 rows)
+
